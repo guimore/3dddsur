@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: “la tipografía que estén usando”;
+}
+
+header{
+    width: 10% ;
+    background: steelblue;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+header label:hover {
+    cursor:pointer;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+     flex-direction: column; /**pone la file menu en columna menu*/
+    justify-content: flex-end;
+
+}
+
+.menu  li {
+    border-left: 1px solid white;
+    
+  }
+.menu li img{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.menu li 
+
+
+.menu li:hover {
+    background: darkblue;
+}
+
+
+.menu li a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* valores para responsive */
+
+@media (max-width:768px) {
+    header label{
+        display:block;
+    }
+    
+    .menu{
+        position: absolute;
+        background: steelblue;
+        width: 30%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    
+    .menu ul{
+        flex-direction: column;
+    }
+    
+    .menu li {
+        border-top: 1px solid white;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}

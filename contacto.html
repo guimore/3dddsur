@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="contacto.css">
+    <!--<link rel="stylesheet" href="estiloindex.css"> -->
+	<title>contacto</title>
+
+</head>
+<body>
+	<!--caja principal que es el padre  de las otras cajas -->
+	<header id="cabecera">
+		   <div id="logo"><h1>DDD SUR</h1></div>
+		<div id="menu"><!--aca va el menu cnetral  hay q darle forma -->
+			<ul>
+               <li><a href="index.html">Principal</a></li>
+               <li><a href="galeria.html">Galeria</a></li>
+               <li><a href="contacto.html">Contactenos</a></li>
+           <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+		</div>
+		<!--redes sociales en la aprte superior -->
+		<div id="redessociales">
+			<ul>
+            <li><a href="#"><img src="sociales/facebook.png" class="redondear" width="20px" height="30px"></a></li>
+            <li><a href="#"><img src="sociales/instagram.png" class="redondear" width="20px" height="30px"></a> </li>
+           <li><a href="#"><img src="sociales/whatsapp.png" class="redondear" width="20px" height="30px"></a> </li>
+           </ul>
+		</div>
+     </header>	
+     <!--foto centrl aca puede ir el banner imagen grande principal -->
+
+<div id="principal">
+<div id="fotogrande"><!--contenedor padre  de -->
+   
+	<img src="img/email-fondo.jpg" width="auto" height="100%" >
+	<!--codigo efecto de texto flotante sobre la imagen-->
+	<div id="centrado"><h1 id="texto-encima">Dejanos Tu Mensaje!!!</h1></div>
+  
+</div>
+    
+	<!--aca empieza contactenos 680 anchoy 580 alto px -->
+<div id="main">
+    <div ><h1 id="titulo-principal">Contactenos</h1> </div>
+               <div id="contactenos-c1"> 
+                    <h1 id="titulo-contacto">Informacion de Contacto</h1>
+	    
+                <p id="lineas">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Animi ipsam incidunt rerum fugit amet, consequuntur natus ullam non cum voluptates consequatur minus in tempore corporis!</p>
+              <div id="contacto-varios">                
+              <p class="desc-columna"><span class="icon-phone"></span><i class="icon-phone fas fa-phone"></i>Teléfono: 4736-3726</p>
+                    
+                        <p class="desc-columna"><span class="icon-whats"></span><i class="icon-whats fab fa-whatsapp"></i>Celular: 11-4567-3456</p>
+                    
+                        <p class="desc-columna"><span class="icon-location"></span><i class="icon-location fas fa-map-marker-alt"></i>Roca 1234 - Florida</p>
+                    
+                        <p class="desc-columna"><span class="icon-mail"></span><i class="icon-mail fas fa-envelope"></i>fulano@gmail.com</p>
+               </div>
+
+     <div id="redessociales">
+            <ul>
+            <li><a href="#"><img src="sociales/facebook.png" class="redondear" width="20px" height="30px"></a></li>
+            <li><a href="#"><img src="sociales/instagram.png" class="redondear" width="20px" height="30px"></a> </li>
+           <li><a href="#"><img src="sociales/whatsapp.png" class="redondear" width="20px" height="30px"></a> </li>
+           </ul>
+        </div>
+
+
+
+     </div>
+      
+      <!--empieza la segunda caja de contacto-->
+               <div  id="contactenos-c2"> 
+                <form action="enviar.php" method="post" class="formulario columna columna-50">
+
+                <label for="" class="formulario-label">Nombre:</label>
+                <input type="text" class="formulario-input-txt" name="nombre">
+
+
+                <label for="" class="formulario-label">Mail:</label>
+                <input type="text" class="formulario-input-txt" name="mail">
+
+
+                <label for="" class="formulario-label">Teléfono:</label>
+                <input type="text" class="formulario-input-txt" name="telefono">
+
+
+                <label for="" class="formulario-label">Mensaje:</label>
+                <textarea name="mensaje" cols="30" rows="10" class="formulario-textarea"></textarea>
+
+                <input type="submit" name="submit" value="Enviar" class="btn formulario-btn">
+
+            </form>
+        </div>
+</div>
+    </div>
+
+
+<!--pie hay varias cajas esto hay q hacerlo -->
+   <div id="pie">
+        <div id="cajita1"><h3>Por que nos eleguistes</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim dolorem qui eum nam, aperiam eligendi sed explicabo vel sapiente! Voluptatum sit corporis, molestiae quas!
+          	</p>
+         </div>
+   <div id="cajita2"><h3>Contactanos</h3>
+          <ul>
+                  <li><a href="#"><img src="sociales/telefono.png" class="redondear" width="20px" height="30px"><p>436785992</p></a></li>
+                  <li><a href="#"><img src="sociales/whatsapp.png" class="redondear" width="20px" height="30px"><p>1556496323</p></a> </li>
+              <li><a href="#"><img src="sociales/email.png"  class="redondear" width="20px" height="30px"><p>gmora@edato.com</p></a> </li>
+           </ul>
+   </div>
+   <div id="cajita3"><h3>Siguenos en nuetras redes</h3>
+           <ul>
+                  <li><a href="#"><img src="sociales/facebook.png" class="redondear" width="20px" height="30px"><p>seguinos</p></a></li>
+                  <li><a href="#"><img src="sociales/instagram.png" class="redondear" width="20px" height="30px"><p>seguinos</p></a></li>
+                 <li><a href="#"><img src="sociales/whatsapp.png" class="redondear" width="20px" height="30px"><p>seguinos</p></a></li>
+           </ul>
+   </div>
+  <div id="cajita4"><h4>derechos de autor</h4></div>
+
+</div>
+
+
+	</div>
+	
+</div>
+</div>
+</body>
+</html>

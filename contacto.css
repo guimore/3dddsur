@@ -1,0 +1,537 @@
+/*  este es un hoja de estilo de trabajodel miercoles 08 de  dic */
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+/*para queno se superpongan los bordes*/
+*{
+    box-sizing: border-box;
+}
+
+
+
+#cabecera {
+   /* border:2px yellow solid ;*/
+    width:98%;
+    height:65px;
+    padding-bottom: 4px;
+    background:#3498DB ;
+    color: white;
+    
+    /*box-sizing: border-box;*/
+
+}
+    
+#cabecera  #logo h1 {
+  
+    /*border:2px yellow solid ; */
+    width:30%;
+    height: 64px;
+    background: #3498DB;
+    display: flex;
+    font-size: 20ox;
+    float:left ;
+   line-height: 50px ;
+   padding-left: 10px;
+}
+/**menu principal de lavcabecere*/
+#cabecera #menu {
+ /*   border:2px yellow solid ; */
+    width:40.1%;
+    height: 60px;
+    background:#3498DB;
+    overflow:hidden;  
+    display:inline-block; 
+    display: flex;
+    float:left ;
+  line-height:50px ;
+ 
+ }
+ #cabecera   ul {
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+/* aca se definen como aparece el menu osea  el color de la letra tamaño etc*/
+#cabecera a{
+    color: white;
+    width:100px;
+    text-decoration:none;
+    padding:3px 5px;
+    /*display: block; esta opcion ubica las palabras del menu en forma horizontal */
+    
+}
+
+/* efectos sobre los enlaces en  a    pseudoclases*/
+a:link {
+  text-decoration: none;   /*elimina el subsayado universal de slos enlaces*/
+}
+a:visited {
+  text-decoration: none;   /*elimina q el enlace fue visitado   */
+}
+#menuhorizontal a:hover {
+        background-color:red;
+}
+/*hasta aca efectos sobre el mouse*/
+
+
+
+#cabecera #redessociales{
+   /*border:2px red solid ;*/ 
+   /* margin: 10px ; */
+    width:27.8%;
+    height: 60px;
+    background: #3498DB;
+    overflow:hidden;  
+    padding-top:1px ;
+    margin-top:1px ;
+    display: flex;
+    float:right ;
+   /* box-sizing:content-box;*/
+}
+#menu li{
+    display:inline-block; 
+    text-align:center ;
+   padding-left: 25px;
+   padding-right:5px ;
+   color: black;
+   text-decoration:unset;
+   font-size:20px ;
+
+   }
+
+#redessociales li{
+   /* border: 2px red solid;*/
+    display:inline-block; 
+    padding-left: 5px;
+  box-sizing:content-box;
+}
+#redessociales  ul {
+    /*border: 2px black solid;*/
+     box-sizing: border-box;
+    text-align: right;
+    padding-left:180px;
+   padding-top:10px ;
+ line-height:10px;   
+}
+/*redondea la imagen*/
+.redondear{ 
+    background:white; 
+    border-radius: 50% 50%;
+border: 2px  white solid;     
+}
+
+
+/*es la parte mas grande  foto el fonde es de color amarillo iria una foto con un mensaje*/
+#principal   /*es el cuerpo de la pagina es color  gris     **/
+{
+   /* border:2px black solid ;*/
+    width:1200px;
+    height: 1250px;
+    background:white;
+margin:1px auto;
+margin-top: 10px;
+padding: 2px;
+
+
+}
+
+
+
+
+
+
+#fotogrande{
+    /*border: 2px  red solid;*/
+    width:98% ;
+   height:600px ;
+   background:white ;
+   float: left;
+   padding-top:6px ;
+}
+
+#fotogrande img{
+width: 100%;
+    height:600px;;
+}
+/*aca el codigo para posicionar el texto encima de la imagen principal en este caso dejanos tu mensaje  */
+/*en este caso el .contenedor cambia, por  */
+#fotogrande{
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+          /*efecto sobre el texto de h1*/ 
+#texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+     color: white;
+    font-size:50px; 
+}
+ #centrado  h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+               
+}
+/*hasta aca el codigo  de texto flotante*/
+/*parte donde  esta los datos  */
+#cuerpo{
+   /* border: 2px  red solid;*/
+    width:98% ;
+   height:200px ;
+   background:white ;
+   float: left;
+   padding:6px ;
+  
+}
+      /*---------------   aca empieza contactanos----------------*/
+                /*caja padre  pricipal que contine   las  dos cajas verticales*/
+/*esta parte se esat armando en el archivo cajaprueba y el estilo es cajacontacto.css*/
+
+#main{
+    
+   /* border: 2px  red solid;*/
+    width:98%;
+    height: 600px;
+    float: left;
+    background: white;
+    margin-top: 20px;   /*separacion entre la imagen grande y contatenos  */ 
+}
+               /*titulo informacion de contacto*/
+#titulo-contacto{
+   /* border: 2px yellow dashed; */
+    display: block;
+    text-align: center;
+    padding:5px ;
+
+}
+/*.grupo-contacto{
+    
+    border:2px black solid ;
+    width:790px ;
+    height:auto ;
+    background:red;
+} 
+
+#titulo-caja { /*titulo deprimera caja
+    border: 2px greenyellow;
+    background: green;
+    width: 50%;
+     
+} */
+#titulo-principal{  <!--contactenos-->
+    display: block;
+   /* background: gray; */
+    /*border:2px red solid ;*/
+    color: black;
+    width: auto;
+  text-align: center;
+   padding: 10px;
+}
+ #lineas{
+  /*  border: 2px black solid;*/
+    height:100px ;
+    padding: 20px;
+    text-align: left;
+ 
+}
+#contactenos-c1{
+   /* border: 2px red dashed;*/
+    width:48% ;
+    height:80%;
+    float: left;
+    display: inline-block ;
+    margin-left:10px ;
+}
+
+#contactenos-c2{
+  /*  border: 2px red dashed;*/
+    width:48% ;
+    height:80%;
+    float:right;
+    display: inline-block ;
+    margin-right: 30px;
+}
+
+
+ <!--primera caja -->
+
+
+/*#primera-caja{
+    box-sizing: border-box;
+    border: 2px yellow solid;
+    width: 40% ;
+    height: auto;
+   float: left;
+display: inline-block;
+background: yellow;
+} */
+/*.grupo-contacto  ul li  {
+    border: 2px bleu solid;
+
+}*/
+#contacto-varios{
+    height: 400px;
+    width: 90% ;
+}
+
+
+ #contacto-varios p{
+/*border: 2px red solid;*/
+height:50px ;
+padding: 10px;
+margin-bottom:20px ;
+}
+
+
+
+
+#contactenos-c1  #redessociales {
+    /*border: 2px black solid; */
+    float: left;
+    display: block;
+padding-right:100px ;
+margin-right: 50px;
+width:60% ;
+height: auto;
+}
+
+ #ontactenos-c1   #redessociales ul li{
+    border:2px black solid ;
+  padding-right:70px ;
+  display:inline-block;
+  padding-left: 10px;
+
+  }
+
+#contactenos-c1   #redessociales ul li a img {
+/*border: 2px black solid;*/
+
+
+}
+/*#segunda-caja{
+box-sizing: border-box;
+    border: 2px yellow solid;
+    width: 40% ;
+    height: auto;
+   float: right;
+display: inline-block;
+background: yellow;
+
+}
+*/
+
+
+
+
+
+#contactenos p{
+    border: 2px blue solid;
+width:300px ;
+border: 2px black solid 
+height: auto;
+background: red;
+}
+
+/*#envio-datos{
+border: 2px yellow solid;
+    width:50% ;
+    height: 500px;
+    float: right;
+   background: gray;
+display: inline-block;
+}  */
+
+
+#contactenos-c2{
+    background: white;
+    
+}
+
+
+#contactenos-c2 .formulario-input-txt{
+    display: inline-block;
+    width: 90%;
+    height: 30px;
+}
+.formulario-label{
+    display:block;
+}
+.formulario-textarea{
+    display: block;
+    width: 90%;
+    height: 250px;
+}
+
+
+
+/*-------------------------------- pie de pagina------------ */
+#pie{
+ /*border: 2px  blue solid; */
+    width:98% ;
+   height:200px ;
+   background:#3498DB;
+   float: left;
+   padding-top:2px ;
+   color: white;
+     
+}
+#pie  #cajita1{
+   /* border: 2px  blue solid;*/
+    width:30% ;
+   height:200px ;
+   background: #3498DB;
+   float: left;
+   display: inline-block;  /*alinea elh3 y elparrafo en bloque uno arriba del otro*/
+   padding-top:6px ;
+}
+ #cajita1 h3{
+        text-align: center;
+        display: flex;
+        float:left ;
+        padding-left: 80px;
+        padding-top:6px ;
+        font-size: 20px ;
+    }
+#cajita1 p{
+     text-align: center;
+       display: flex;
+        padding-top: 10px;
+        float:left ;
+        text-align:center;
+}
+
+ 
+ #pie #cajita2{
+    /*border: 2px  blue solid; */
+    width:32.7%;
+   height:200px;
+   background: #3498DB;
+   float: left;
+   display:inline-block;/////
+   padding-top:6px ;
+  }
+   #cajita2 h3{
+        text-align: center;
+        padding-left: 5px;
+        padding-top:18px ;
+    padding-bottom: 5px;
+}
+
+
+   #cajita2 ul{
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 20px;
+    text-align: center;
+    
+   }
+#cajita2 ul li{
+    box-sizing: border-box;
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 120px;
+    text-align: center;
+    height: 50px;
+    
+   }
+#cajita2 ul li a {
+    box-sizing: border-box;
+    /*border:2px black solid;*/
+   list-style: none;
+    padding-left: 10px;
+    text-align: right;
+    height: 50px;
+    margin-right:10px;
+    float: left;
+   }
+
+#cajita2 ul li a p{
+ float: right;
+    padding-left:15px; 
+    padding-top: 5px;
+    
+}
+    /*seguinos en*/
+    
+#pie #cajita3{
+    box-sizing: border-box;
+   /* border: 2px  black solido; */
+    width:34% ;
+   height:200px ;
+   background:#3498DB;
+   float: right;
+   display: block;
+   margin-left: 30px ;
+   border-left:30px ;
+}
+
+#cajita3 ul{
+    list-style: none;
+    padding-left: 1px;
+    text-align: center;
+   /* border: 2px  black solido;*/
+}
+
+ #cajita3 h3{
+        text-align: center;
+         
+       /* border:2px black solid; */
+        padding-left: 5px;
+        padding-top:18px ;
+        padding-bottom:5px; 
+    }
+
+#cajita3 ul li{
+    box-sizing: border-box;
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 120px;
+    text-align: center;
+    height: 50px;
+    padding-top:5px; 
+    
+   }
+
+
+#cajita3 ul li a {
+    box-sizing: border-box;
+    /*border:2px black solid;*/
+   list-style: none;
+    padding-left: 10px;
+    text-align: right;
+    height: 50px;
+    /*margin-right:10px;*/
+    float: left;
+   }
+
+#cajita3 ul li a p{
+    box-sizing: border-box;
+ float: right;
+    padding-left: 12px;
+    /*border: 2px  black solido;*/
+    text-align: center;
+    
+}
+
+
+#pie #cajita4{
+    /*border: 2px  blue solid;*/
+    width:100% ;
+   height:auto ;
+background:#3498DB;
+   float:left;
+    padding-top: 2px;
+
+   display: flex;
+   padding-top:6px ;
+  } 
+ #cajita4 h4{
+    text-align: center;
+     padding-left:45%; 
+}

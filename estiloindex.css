@@ -1,0 +1,527 @@
+/*este es el index a subir correguido hoy miercoles 8 d ediceimbre  juntoconel cee que s ellama nosotrosc.css   */
+
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+/*para queno se superpongan los bordes*/
+*{
+    box-sizing: border-box;
+}
+
+#principal   /*es el cuerpo de la pagina es color  gris     **/
+{
+    /*border:2px black solid ;*/
+    width:1200px;
+    height: auto;
+    background:none;
+margin:1px auto;
+margin-top: 10px;
+padding: 4px;
+
+
+}
+
+#cabecera {
+   /* border:2px yellow solid ;*/
+    width:98%;
+    height:65px;
+    padding-bottom: 4px;
+    background:#3498DB ;
+    color: white;
+    
+    /*box-sizing: border-box;*/
+
+}
+    
+#cabecera  #logo h1 {
+  
+    /*border:2px yellow solid ; */
+    width:30%;
+    height: 64px;
+    background: #3498DB;
+    display: flex;
+    font-size: 20ox;
+    float:left ;
+   line-height: 50px ;
+   padding-left: 10px;
+}
+/**menu principal de lavcabecere*/
+#cabecera #menu {
+ /*   border:2px yellow solid ; */
+    width:40.1%;
+    height: 60px;
+    background:#3498DB;
+    overflow:hidden;  
+    display:inline-block; 
+    display: flex;
+    float:left ;
+  line-height:50px ;
+ 
+ }
+ #cabecera   ul {
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+/* aca se definen como aparece el menu osea  el color de la letra tamaño etc*/
+#cabecera a{
+    color: white;
+    width:100px;
+    text-decoration:none;
+    padding:3px 5px;
+    /*display: block; esta opcion ubica las palabras del menu en forma horizontal */
+    
+}
+
+/* efectos sobre los enlaces en  a    pseudoclases*/
+a:link {
+  text-decoration: none;   /*elimina el subsayado universal de slos enlaces*/
+}
+a:visited {
+  text-decoration: none;   /*elimina q el enlace fue visitado   */
+}
+#menuhorizontal a:hover {
+  background-color:red;
+}
+/*hasta aca efectos sobre el mouse*/
+
+
+
+#cabecera #redessociales{
+   /*border:2px red solid ;*/ 
+   /* margin: 10px ; */
+    width:27.8%;
+    height: 60px;
+    background: #3498DB;
+    overflow:hidden;  
+    padding-top:1px ;
+    margin-top:1px ;
+    display: flex;
+    float:right ;
+   /* box-sizing:content-box;*/
+}
+#menu li{
+    display:inline-block; 
+    text-align:center ;
+   padding-left: 25px;
+   padding-right:5px ;
+   color: black;
+   text-decoration:unset;
+   font-size:20px ;
+
+   }
+
+#redessociales li{
+   /* border: 2px red solid;*/
+    display:inline-block; 
+    padding-left: 5px;
+  box-sizing:content-box;
+}
+#redessociales  ul {
+    /*border: 2px black solid;*/
+     box-sizing: border-box;
+    text-align: right;
+    padding-left:180px;
+   padding-top:10px ;
+ line-height:10px;   
+}
+/*redondea la imagen*/
+.redondear{ 
+    background:white; 
+    border-radius: 50%;
+border: 2px white solid;     
+}
+
+
+/*es la parte mas grande  foto el fondo es de color amarillo iria una foto con un mensaje*/
+#fotogrande{
+    border: 2px  grey solid;
+    width:98% ;
+   height:600px ;
+   background:white ;
+   float: left;
+   padding-top:6px ;
+}
+
+#fotogrande img{
+width: 100%;
+    height:600px;;
+}
+
+ #centrado  h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+     font-size: 60px;
+     
+}
+
+/*parte donde  esta los datos caja padre pricipal del cuerpo */
+#cuerpo{
+    border: 2px  white dashed;
+    width:98% ;
+   height:990px ;
+   background:white ;
+   float: left;
+   padding-top:6px ;
+   
+}
+/*primera parte del cuerpo*/
+#bienbenido{
+    /*border:1px red solid;*/
+    height: 207px;
+    padding: 30px;
+}
+/*h2                  */
+#titulo{
+    /*border:1px red solid;*/
+    height:25px;
+    margin:15px;
+    /*background:orange;*/ 
+    display: block;
+    text-align:center;  
+}
+#reglon{
+    
+   /*border:1px black solid;*/
+    height:75px;
+    padding-top:0.5em; 
+    margin-top:16px;
+    margin-bottom:16px; 
+   /* background:orange;*/ 
+    display: block;
+    text-align:justify;  
+
+
+}
+
+
+
+/*segunda parte  del cuerpo  imagen ala izquierda y texto ala derecha*/
+#acercadenosotros{
+    /*border: 2px black dashed;*/
+    height:440px;
+    width:98%;    
+   /* background:grey;*/     
+}
+
+#acercadenosotros  #nosotros{
+ /* border:2px green solid;*/
+ padding:20px;
+    background:white; 
+    height:98%; 
+    width:auto; 
+}         
+
+
+.box{
+     border:1px gray solid;
+    height: 98%;
+    width:49%; 
+    padding:10px ;
+    float: left;
+    display: inline-block;
+    padding-bottom:5px; 
+}
+
+.box #titulo{
+    /*border:1px red solid;*/
+    height:45px;
+    margin:15px;
+    /*background:orange;*/ 
+    display: block;
+    text-align:center;
+    padding-top:20px;
+    margin-top:10px; 
+}
+.box img{
+   width:100%;
+    height:100%;
+    
+}
+
+
+ /* caja 2 donde estas las lineas y el boton contacto*/
+.box #lineas2{
+    /*border:1px red solid;*/
+    height:80px;
+    width:98%; 
+    padding: ;
+    display: block;
+    }
+
+#btn-contacto{
+    border: 2px grey solid ;
+    display:block;
+    text-align: center;
+     width: 50%;
+    height: 50px;
+    font-size:40px;
+    padding:10px;
+    margin-bottom:20px ;     
+    margin: 10px;
+    margin-top:20px; 
+    margin-left:25% ;
+    background: grey;
+    color: white;  
+}
+
+/*-----diseños destacados----------------*/
+/* productos destacados un titulo y 4 imagens debajo en forma lineal*/
+
+
+#grupo-fotos4{
+   /* border:2px yellow solid; */
+    /*background:green; */
+    height:500px;
+    width :99% ;
+    padding-top: 10px;
+    padding-bottom:40px;
+    margin-bottom:80px; 
+    margin-top:10px ;
+
+}
+/*----------------titulo diseños destacados----------------*/
+#titulo3{ 
+    border:2px white solid;
+    display: block;
+    text-align: center;
+    height: 35px;
+    width: 98%;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*   -------cjaja que contiene las  4 cajas de fotos------*/
+
+#cajota{
+    /*border:2px red solid;*/
+    /*background:orange;*/ 
+    height: 400px;
+    width:99%;
+    margin-bottom:10px ;
+    padding:20px ;
+   }
+
+#cajota .caja{
+   /* border:2px beige solid; */
+    background: white;
+    height:99%;
+    width: 24.7%;
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-top: 1px;
+    margin-bottom:20px ;
+    
+}
+
+
+  .foto {
+   /* background: gray;*/
+    border: 2px  gray solid;
+    height:80% ;
+    width:99.9% ;
+    padding: 10px;
+}
+
+.tipo{
+   /* border: 1px black solid; */
+    text-align: center;
+padding:10px ;
+font-style: oblique;
+font-size:30px ;
+padding-bottom: 10px;
+margin-bottom: 10px;
+}
+.paq{
+    /*border: 1px black solid; */
+    text-align: center;
+   padding:3px ;
+   padding-top: 1px;
+   padding-bottom:10px ;
+   font-style: italic;
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+
+
+/*--------caja termina el cuerpo de la caja y empieza el pie---------------   */
+
+#pie{
+ /*border: 2px  blue solid; */
+    width:98% ;
+   height:200px ;
+   /*background:#3498DB;*/
+   float: left;
+   padding-top:160px ;
+   color: white;
+   margin-bottom:10px ;
+     margin-top: 20px;
+}
+#pie  #cajita1{
+   /* border: 2px  blue solid;*/
+    width:31.2% ;
+   height:200px ;
+   background: #3498DB;
+   float: left;
+   display: inline-block;  /*alinea elh3 y elparrafo en bloque uno arriba del otro*/
+   padding-top:6px ;
+}
+ #cajita1 h3{
+        text-align: center;
+        display: flex;
+        float:left ;
+        padding-left: 80px;
+        padding-top:6px ;
+        font-size: 20px ;
+    }
+#cajita1 p{
+     text-align: center;
+       display: flex;
+        padding-top: 10px;
+        float:left ;
+        text-align:center;
+}
+
+ 
+ #pie #cajita2{
+    /*border: 2px  blue solid;*/ 
+    width:33%;
+   height:200px;
+   background: #3498DB;
+   float: left;
+   display:inline-block;/////
+   padding-top:6px ;
+ padding-right:15px;      
+  }
+
+   #cajita2 h3{
+        text-align: center;
+        padding-left: 5px;
+        padding-top:18px ;
+    padding-bottom: 5px;
+}
+
+
+   #cajita2 ul{
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 20px;
+    text-align: center;
+    
+   }
+#cajita2 ul li{
+    box-sizing: border-box;
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 120px;
+    text-align: center;
+    height: 50px;
+    
+   }
+#cajita2 ul li a {
+    box-sizing: border-box;
+    /*border:2px black solid;*/
+   list-style: none;
+    padding-left: 10px;
+    text-align: right;
+    height: 50px;
+    margin-right:10px;
+    float: left;
+   }
+
+#cajita2 ul li a p{
+ float: right;
+    padding-left:15px; 
+    padding-top: 5px;
+    
+}
+    /*seguinos en*/
+    
+#pie #cajita3{
+    /*box-sizing: border-box;*/
+    border: 2px  black solido;
+    width:35.717%;
+   height:200px ;
+   background:#3498DB;
+   float: right;
+   display: block;
+   margin-right:1.px ;
+   border-left:2px ;
+   padding-left: 1px;
+}
+
+#cajita3 ul{
+    list-style: none;
+    padding-left: 1px;
+    text-align: center;
+   /* border: 2px  black solido;*/
+}
+
+ #cajita3 h3{
+        text-align: center;
+         
+       /* border:2px black solid; */
+        padding-left: 5px;
+        padding-top:18px ;
+        padding-bottom:5px; 
+    }
+
+#cajita3 ul li{
+    box-sizing: border-box;
+       /*border:2px black solid;*/ 
+    list-style: none;
+    padding-left: 120px;
+    text-align: center;
+    height: 50px;
+    padding-top:5px; 
+    
+   }
+
+
+#cajita3 ul li a {
+    box-sizing: border-box;
+    /*border:2px black solid;*/
+   list-style: none;
+    padding-left: 10px;
+    text-align: right;
+    height: 50px;
+    /*margin-right:10px;*/
+    float: left;
+   }
+
+#cajita3 ul li a p{
+    box-sizing: border-box;
+ float: right;
+    padding-left: 12px;
+    /*border: 2px  black solido;*/
+    text-align: center;
+    
+}
+
+
+#pie #cajita4{
+    /*border: 2px  blue solid;*/
+    width:100% ;
+   height:auto ;
+background:#3498DB;
+   float:left;
+    padding-top: 2px;
+
+   display: flex;
+   padding-top:6px ;
+  } 
+ #cajita4 h4{
+    text-align: center;
+     padding-left:45%; 
+}
